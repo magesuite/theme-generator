@@ -28,7 +28,7 @@ inquirer
             type: 'input',
             name: 'repository',
             message:
-                '[Optional] What is the URL of GIT repository for this theme?',
+                '[Optional] What is the URL of Git repository for this theme?',
         },
     ])
     .then(answers => {
