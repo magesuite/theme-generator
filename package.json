@@ -1,6 +1,6 @@
 {
     "name": "@creativestyle/magesuite-theme-generator",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Easier and faster scaffolding of new themes for MageSuite project.",
     "main": "index.js",
     "author": "creativestyle",
