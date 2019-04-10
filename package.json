@@ -1,0 +1,33 @@
+{
+    "name": "@creativestyle/magesuite-theme-generator",
+    "version": "1.0.0",
+    "description": "Easier and faster scaffolding of new themes for MageSuite project.",
+    "main": "index.js",
+    "author": "creativestyle",
+    "license": "OSL-3.0",
+    "scripts": {
+        "version": "auto-changelog -p && git add CHANGELOG.md"
+    },
+    "release-it": {
+        "scripts": {
+            "beforeStage": "auto-changelog"
+        }
+    },
+    "bin": {
+        "magesuite-theme-generator": "./index.js",
+        "mtg": "./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npm/cli.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "auto-changelog": "^1.12.0",
+        "fs-extra": "^7.0.1",
+        "inquirer": "^6.2.2",
+        "release-it": "^10.4.0"
+    }
+}
