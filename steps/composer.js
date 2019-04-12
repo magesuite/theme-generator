@@ -19,7 +19,7 @@ module.exports = answers => {
     },
     "require": {
         "creativestyle/theme-creativeshop": "dev-next"
-    },
+    }
 }
 `
     );
