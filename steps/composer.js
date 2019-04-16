@@ -13,10 +13,6 @@ module.exports = answers => {
     "description": "${answers.name} Magento Theme",
     "homepage": "https://creativestyle.de",
     "licence": "proprietary",
-    "repositories": {
-        "type": "vcs",
-        "url": "${answers.repository}"
-    },
     "require": {
         "creativestyle/theme-creativeshop": "dev-next"
     }
