@@ -9,7 +9,7 @@ module.exports = answers => {
     console.log('Cloning CreativeShop repository to use as a base...');
 
     return exec(
-        `git clone --branch next --single-branch git@gitlab.creativestyle.pl:m2c/theme-creativeshop.git ${themePath}`
+        `git clone --branch next --single-branch git@github.com:magesuite/theme-creativeshop.git ${themePath}`
     ).then(() =>
         fs
             .remove(path.join(themePath, 'src'))
