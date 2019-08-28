@@ -19,9 +19,9 @@ yarn global add @creativestyle/magesuite-theme-generator
 After installing the package you can simply run:
 
 ```bash
-magesuite-frontend-builder
+magesuite-theme-generator
 # or
-mfb
+mtg
 ```
 
 You will be walked through a series of questions based on which new theme will be created in a subdirectory of your current working directory.
