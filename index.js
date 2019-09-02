@@ -8,7 +8,7 @@ const steps = {
     registration: require('./steps/registration'),
     theme: require('./steps/theme'),
     init: require('./steps/init'),
-    preview = require('./steps/preview')
+    preview: require('./steps/preview'),
 };
 
 inquirer
