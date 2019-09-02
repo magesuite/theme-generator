@@ -8,6 +8,7 @@ const steps = {
     registration: require('./steps/registration'),
     theme: require('./steps/theme'),
     init: require('./steps/init'),
+    preview = require('./steps/preview')
 };
 
 inquirer
@@ -35,9 +36,9 @@ inquirer
         return steps
             .clone(answers)
             .then(() => steps.registration(answers))
-            .then(() =>
-                steps.composer(answers).then(() => steps.theme(answers))
-            )
+            .then(() => steps.composer(answers))
+            .then(() => steps.theme(answers))
+            .then(() => steps.preview(answers))
             .then(() => steps.init(answers))
             .catch(error => console.error(error.message));
     });
