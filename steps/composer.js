@@ -14,7 +14,7 @@ module.exports = answers => {
     "homepage": "https://creativestyle.de",
     "licence": "proprietary",
     "require": {
-        "creativestyle/theme-creativeshop": "dev-next"
+        "creativestyle/theme-creativeshop": "18.x-dev"
     }
 }
 `

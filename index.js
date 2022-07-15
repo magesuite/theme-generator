@@ -17,7 +17,7 @@ inquirer
             type: 'input',
             name: 'name',
             message:
-                'What is the name of your theme? It will be for example displayed in theme selector in admin panel.',
+                'What is the name of your theme? (for theme-magesuite, use magesuite)',
         },
         {
             type: 'input',
@@ -40,5 +40,6 @@ inquirer
             .then(() => steps.theme(answers))
             .then(() => steps.preview(answers))
             .then(() => steps.init(answers))
-            .catch(error => console.error(error.message));
+            .catch(error => console.error(error.message))
+            .then(() => console.log(`Success! Generated theme-${answers.name.toLowerCase()}!`));
     });

@@ -7,17 +7,17 @@ module.exports = answers => {
 
     console.log('Initializing new Git repository...');
 
-    return exec(`cd ${themePath} && git init`).then(() => {
+    return exec(`cd ${themePath} && git init --initial-branch=1.x`).then(() => {
         if (answers.repository) {
             console.log(
                 `Adding "${
                     answers.repository
-                }" as a remote and pushing all files.`
+                }" as a remote and pushing all files...`
             );
             return exec(
                 `cd ${themePath} && git remote add origin ${
                     answers.repository
-                } && git add --all && git commit -m "Initial commit" && git push`
+                } && git add . && git commit -m "Initial commit" && git push -u origin 1.x`
             );
         } else {
             console.log(
