@@ -6,5 +6,5 @@ module.exports = answers => {
 
     console.log('Adding default preview file...');
 
-    return fs.copy('./preview.png', path.join(themePath, 'src/preview.png'));
+    return fs.copy(__dirname + '/preview.png', path.join(themePath, 'src/preview.png'));
 };
